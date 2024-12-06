@@ -29,11 +29,18 @@
             <p>We'd love to hear from you! Whether you have a question about our menu, reservations, or anything else, feel free to reach out.</p>
             
             <!-- Contact Information -->
-            <div class="contact-info">
-                <p><strong>Phone:</strong> (123) 456-7890</p>
-                <p><strong>Address:</strong> 123 Greenway Blvd, Plantville, USA</p>
-                <p><strong>Email:</strong> <a href="mailto:info@greenplatedining.com">info@greenplatedining.com</a></p>
-            </div>
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="_replyto" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+</form>
 
             <!-- Placeholder for Contact Image -->
             <img src="images/contact.jpg" alt="Contact Us" class="contact-image">
