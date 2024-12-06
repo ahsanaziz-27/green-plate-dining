@@ -90,7 +90,7 @@ nav ul li a.active {
 }
 
 /* About Preview */
-.about-preview {
+/*.about-preview {
     background-color: #fff;
     padding: 40px 20px;
     text-align: center;
@@ -118,6 +118,56 @@ nav ul li a.active {
 
 .btn:hover {
     background-color: #276749;
+}
+*/
+.about-us {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.about-us h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  flex: 1;
+  max-width: 500px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+  flex: 1;
+  max-width: 600px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.text-container p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
 }
 
 /* Menu Section */
